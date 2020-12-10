@@ -88,8 +88,8 @@ Using the reviews array above do the following: (no function needed)
 
 
 
-// reviews.push({name: "felicia", rating: 1, feedback: "Awful"})
-// console.log(reviews);
+reviews.push({name: "felicia", rating: 1, feedback: "Awful"})
+console.log(reviews);
 
 
 
@@ -137,7 +137,7 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(array) {
-  return `${reviews[reviews.length-1].name} gave the restaurant a ${reviews[reviews.length-1].rating} star review, and their feedback was: ${reviews[reviews.length-1].feedback}`
+  return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`
 } 
 
 getLastReview(reviews);
